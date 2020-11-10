@@ -4,14 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forkio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./dist/css/styles.min.css" />
   </head>
-  <body>
-    <header class="page-header"></header>
+  <body class="page-body">
+    <header class="header-page">
+    <div class="container">
+      <div class="header-menu-line">
+        <a class="header-logo link--hover-white" href="#">
+          <img class="header-logo__img" src="./dist/images/logo.svg" alt="site logo" width="43" height="41" />
+          <img class="header-logo__img header-logo__img--hover" src="./dist/images/logo-hover.svg"
+            alt="site logo" width="43"  height="41" />
+          <span class="header-logo__text">ForkIO</span>
+        </a>
+        <nav class="header-menu">
+          <ul class="header-menu__list">
+            <li class="header-menu__item"><a href="#" class="header-menu__link link--hover-white">Overview</a></li>
+            <li class="header-menu__item"><a href="#" class="header-menu__link link--hover-white">About Fork</a></li>
+            <li class="header-menu__item"><a href="#" class="header-menu__link link--hover-white">Buying Options</a></li>
+            <li class="header-menu__item"><a href="#" class="header-menu__link link--hover-white">Support</a></li>
+          </ul>
+          <a href="#" class="button button--buy button--hover">Buy Now</a>
+        </nav>
+        <div class="header__burger">
+          <span class="header__burger--line"></span>
+        </div>
+      </div>
+      <div class="header-main">
+        <h1 class="header-main__title">Fork App</h1>
+        <p class="header-main__sub-text">A real gamechanger in the world of web development</p>
+        <p class="header-main__version">v. 2.8 For Mac and Windows</p>
+        <a href="#" class="button button--download button--hover">Download For Free Now</a>
+        <p class="header-main__text-unlim">Unlimited 30-Days Trial Period</p>
+      </div>
+    </div>
+  </header>
 
-    <section class="revosection">
+    <main>
+      <section class="revosection">
     <div class="container">
         <h1 class="revosection__title">Revolutionary editor</h1>
         <p class="revosection__txtundertitle">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim.</p>
@@ -92,7 +122,7 @@
 
 </section>
 
-    <section class="people">
+      <section class="people">
     <h2 class="people__title">People Are Talking About Fork</h2>
     <div class="people__list">
         <div class="people__item">
@@ -127,7 +157,7 @@
 
 </section>
 
-    <section class="pricing">
+      <section class="pricing">
     <div class="container">
       <h2 class="pricing__title">Fork Subscription Pricing</h2>
       <ul class="pricing__list">
@@ -163,6 +193,7 @@
     </div>
   </section>
 
+    </main>
     <script src="./dist/js/scripts.min.js"></script>
   </body>
 </html>
