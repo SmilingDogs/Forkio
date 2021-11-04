@@ -1,0 +1,25 @@
+@mixin flx-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin grd-start {
+    display: grid;
+    justify-items: center;
+    align-items: start;
+    grid-template-columns: auto 405px;
+
+}
+@mixin grd-center {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+@mixin item-text {
+    font-family: $lato;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 24px;
+
+}

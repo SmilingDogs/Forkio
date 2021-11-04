@@ -1,0 +1,165 @@
+.pricing {
+  background: url(../images/pricingBanner.png)no-repeat center;
+  background-size: cover;
+  padding-top: 85px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+  color: #FFFFFF;
+  @media (min-width: 320px) and (max-width: 480px) {
+    padding-top: 15px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @media (min-width: 481px) and (max-width: 992px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.pricing__title {
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-size: 48px;
+  line-height: 50px;
+  font-weight: 700;
+  @media (min-width: 481px) and (max-width: 992px) {
+    font-size: 42px;
+    line-height: 44px;
+    margin-bottom: 40px;
+  }
+  @media (min-width: 320px) and (max-width: 480px) {
+    font-size: 28px;
+    line-height: 42px;
+    margin-bottom: 32px;
+  }
+}
+.pricing__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (min-width: 481px) and (max-width: 992px) {
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 0 auto;
+    //justify-content: flex-end;
+    align-items: center;
+  }
+  @media (min-width: 320px) and (max-width: 480px) {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+.pricing__item {
+  background-color: rgba(255, 255, 255, 0.11);
+  max-width: 260px;
+  //height: 480px;
+  flex: 5;
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
+  @media (min-width: 481px) and (max-width: 992px) {
+    min-width: 200px;
+    margin-right: 0;
+    margin-left: 25px;
+  }
+  @media (min-width: 320px) and (max-width: 480px) {
+    flex: 0;
+    width: 260px;
+    margin-bottom: 18px;
+  }
+}
+.pricing__item--active {
+  background-color: rgba(76, 53, 73, 0.84);
+  width: 300px;
+  height: 580px;
+  flex: 6;
+  margin-right: 10px;
+  @media (min-width: 481px) and (max-width: 992px) {
+    flex-wrap: wrap;
+    max-width: 550px;
+    margin-right: 0;
+    margin-top: 30px;
+    align-items: center;
+  }
+  @media (min-width: 320px) and (max-width: 480px) {
+    flex: 0;
+    margin-bottom: 18px;
+  }
+}
+.pricing__label {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+.pricing__label--active {
+  background-color: #412D41;
+  padding-top: 43px;
+  padding-bottom: 43px;
+}
+.pricing__price {
+  text-transform: uppercase;
+  margin-top: 30px;
+  font-size: 60px;
+  font-weight: 700;
+}
+.pricing__price--active {
+  text-transform: uppercase;
+  margin-top: 14px;
+  font-size: 82px;
+  font-weight: 700;
+}
+.pricing__period {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 75px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 5px;
+    background-color: $color;
+    top: 54px;
+    left: calc(50% - 30px);
+  }
+}
+.pricing__period--active {
+margin-bottom: 100px;
+}
+.pricing__license {
+  height: 36px;
+  font-size: 16px;
+  line-height: 18px;
+  max-width: 210px;
+  margin: 0 auto;
+}
+.pricing__link-purchase {
+  display: block;
+  width: 165px;
+  margin: 50px auto 40px;
+  padding: 15px 38px;
+  border-radius: 40px;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 15px;
+  color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.pricing__link-purchase--active {
+    width: 190px;
+    margin-top: 100px;
+    padding: 19px 48px;
+    font-size: 16px;
+    line-height: 18px;
+}
